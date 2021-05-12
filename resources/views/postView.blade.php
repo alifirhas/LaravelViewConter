@@ -19,7 +19,7 @@
             <div class="col">
                 <h2>This is post {{ $post->id }}</h2>
                 <p>{{ $post->body }}</p>
-                <p>This is post get N clicks</p>
+                <p>This is post get {{ views($post)->count() }} clicks</p>
             </div>
             <div class="col-2"></div>
         </div>

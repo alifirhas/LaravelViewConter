@@ -14,6 +14,8 @@ class PostViewController extends Controller
      */
     public function index(Post $post)
     {
+        views($post)->record();
+
         return view('postView', [
             'post' => $post,
         ]);
